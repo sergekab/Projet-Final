@@ -12,6 +12,7 @@ def load_data():
     return pd.read_csv("Transactions_traite.csv")
 
 df = load_data()
+df=df.head(1000)
 
 st.title("Analyse des Transactions")
 
